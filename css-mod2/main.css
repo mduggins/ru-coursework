@@ -1,1 +1,43 @@
 /* ADD YOUR STYLES HERE */
+
+.h-padding {
+    width: 100%;
+}
+
+.h-padding img {
+    padding: 0px 40px;
+    display: inline-block;
+}
+
+/********************************/
+
+.content {
+    width: 100%;
+}
+
+.content img, p, ol {
+    display: inline-block;
+    padding-left: 50px;
+    vertical-align: top;
+}
+
+/********************************/
+
+/********************************/
+
+.v-space1 {
+    width: 100%;
+}
+
+.v-space1 img {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/******************************/
+
+.list-inline li{
+    display: inline;
+}
+
+/******************************/
