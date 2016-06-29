@@ -123,3 +123,32 @@
 .menu ul li a:hover {
     color: burlywood;
 }
+
+/***********************************/
+
+.page {
+    list-style: none;
+}
+
+.page li {
+    display: inline-block;
+    width: 30px;
+    margin: 10px;
+    border-bottom: solid 3px pink;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.page li:first-child, .page li:last-child {
+    border-bottom: none;
+}
+
+.page li a {
+    text-decoration: none;
+    color: pink;
+}
+
+.active {
+    color: #ccc;
+    border: #ccc;
+}
