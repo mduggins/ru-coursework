@@ -1,5 +1,5 @@
 .container {
-    width: 960px;
+    max-width: 960px;
     margin: 0px auto;
     font-family: Helvetica;
 }
@@ -30,4 +30,8 @@ header {
 
 .billboard {
     margin: 10px 0px;
+}
+
+.gallery img {
+    margin: 0px 40px;
 }
