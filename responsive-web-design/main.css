@@ -27,3 +27,7 @@ header {
     font-size: large;
     line-height: 50px;
 }
+
+.billboard {
+    margin: 10px 0px;
+}
