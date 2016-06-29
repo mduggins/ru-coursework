@@ -4,34 +4,48 @@
     font-family: Helvetica;
 }
 
-header {
-    width: 100%;
-    background-color: orange;
-    height: 50px;
-}
-
-.menu {
+nav ul {
     list-style: none;
-    line-height: 50px;
-    text-align: center;
+    padding: 0px;
+    margin: 0px;
 }
 
-.menu li {
+nav ul li {
     display: inline-block;
-    padding: 0px 20px;
 }
 
-.menu li a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
+    color: orange;
     font-size: large;
-    line-height: 50px;
 }
 
 .billboard {
     margin: 10px 0px;
 }
 
+.billboard img {
+    width: 100%;
+}
+
 .gallery img {
     margin: 0px 40px;
+}
+
+@media (max-width:720px){
+    .content {
+        padding: 20px;
+    }
+    
+    nav ul li {
+        display: block;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 965px){
+    .gallery img {
+        display: block;
+        margin: 10px auto;
+    }
 }
