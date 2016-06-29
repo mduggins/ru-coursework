@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-.content img, p, ol {
+.content img, .content p, .content ol {
     display: inline-block;
     padding-left: 50px;
     vertical-align: top;
@@ -151,4 +151,68 @@
 .active {
     color: #ccc;
     border: #ccc;
+}
+
+/**********************************/
+
+.comment1 {
+    display: inline-block;
+    width: 100%;
+    margin: 5px;
+}
+
+.comment2 {
+    display: inline-block;
+    width: 100%;
+    margin: 5px;
+}
+
+.comment3 {
+    display: inline-block;
+    margin: 5px;
+}
+
+.comment3sub {
+    display: inline-block;
+    padding: 5px;
+}
+
+.comment3sub:last-child {
+    display: block;
+    margin-left: 80px;
+}
+
+time {
+    font-size: small;
+    color: #aaa;
+}
+
+/********************************/
+
+.tabs {
+    list-style: none;
+    z-index: 1;
+}
+
+.tabs li {
+    display: inline-block;
+    padding: 5px 10px;
+    border: solid 1px #000;
+    position: relative;
+    top: 1px;
+}
+
+.tabs li a {
+    text-decoration: none;
+}
+
+.panel {
+    border: solid 1px #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.tabs .tab-active {
+    border-bottom-color: #fff;
 }

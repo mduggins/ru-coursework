@@ -1,0 +1,29 @@
+.container {
+    width: 960px;
+    margin: 0px auto;
+    font-family: Helvetica;
+}
+
+header {
+    width: 100%;
+    background-color: orange;
+    height: 50px;
+}
+
+.menu {
+    list-style: none;
+    line-height: 50px;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    line-height: 50px;
+}
