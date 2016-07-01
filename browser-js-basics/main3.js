@@ -31,3 +31,26 @@ function wordReverse(sentence){
 }
 
 wordReverse(sentence);
+
+//***************************************************
+
+function tripleFive(){
+    for(i = 0; i < 3; i++){
+        console.log("Five!");
+    }
+}
+
+tripleFive();
+
+//**************************************************
+
+function lastLetter(word){
+    console.log(word.slice(-1))
+}
+
+lastLetter("Hello")
+lastLetter("island")
+
+//************************************************
+
+
