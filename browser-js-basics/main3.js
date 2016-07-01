@@ -82,3 +82,16 @@ function toArray(a,b,c){
 
 toArray(1,4,5)
 toArray(8,9,10)
+
+//***********************************************
+
+function startsWithA(str){
+    if(str.charAt(0) == "a" || str.charAt(0) == "A"){
+        console.log("true")
+    }else{
+        console.log("false")
+    }
+}
+
+startsWithA("Aardvark")
+startsWithA("bear")
