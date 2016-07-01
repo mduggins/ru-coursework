@@ -53,4 +53,32 @@ lastLetter("island")
 
 //************************************************
 
+function square(num){
+    console.log(num * num);
+}
 
+square(3)
+square(5)
+
+//************************************************
+
+function negate(num){
+    console.log(num * -1)
+}
+
+negate(5)
+negate(-8)
+
+//***********************************************
+
+var arr = []
+
+function toArray(a,b,c){
+    for(i = 0; i < arguments.length; i++){
+    arr.push(arguments[i]);
+    }
+    console.log(arr)
+}
+
+toArray(1,4,5)
+toArray(8,9,10)
