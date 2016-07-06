@@ -26,3 +26,5 @@
 // }
 
 //****************************
+
+function negativeIndex(arr, num){}
