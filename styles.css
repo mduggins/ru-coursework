@@ -1,0 +1,12 @@
+html, body {
+    background-color: #ddd;
+}
+
+header .nav .nav-pills {
+    display: inline-block;
+}
+
+#wrapper {
+    min-height: 200px;
+    background-color: #efefef;
+}

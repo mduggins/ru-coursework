@@ -36,4 +36,11 @@
 function removeM(match){
     var result = match.split('')
     
+    for(var i = 0; i < result.length; i++){
+        if( result[i] == "m"){
+            var index = result.indexOf(result[i])
+            var cutM = result.splice(index, 1)
+        }
+    }
+    console.log(result.join(""))
 }
