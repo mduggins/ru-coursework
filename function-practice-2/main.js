@@ -27,4 +27,13 @@
 
 //****************************
 
-function negativeIndex(arr, num){}
+// function negativeIndex(arr, num){
+    
+// }
+
+//****************************
+
+function removeM(match){
+    var result = match.split('')
+    
+}
