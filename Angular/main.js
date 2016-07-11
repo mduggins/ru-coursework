@@ -14,3 +14,19 @@ angular.module('Zordon')
             $scope.subGreeting = 'Punch Noises! The putty disappears'
         }
     }
+    
+angular.module('Zordon')
+    .controller('betaCtrl', ['$scope', betaCtrl])
+    
+    function betaCtrl($scope){
+        $scope.beans = "black beans"
+        $scope.favoriteBean = ""
+        
+        $scope.myBeans = []
+        
+        $scope.addBean = function(){
+            $scope.myBeans.push($scope.favoriteBean)
+            console.log($scope.myBeans)
+        }
+            
+     }

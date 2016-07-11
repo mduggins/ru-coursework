@@ -5,12 +5,27 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
         <script type="text/javascript" src="main.js"></script>
     </head>
-    <body ng-controller="alpha">
+    <body>
         
-        <h1>{{ greeting }}</h1>
-        <h3 ng-bind="subGreeting"></h3>
+        <div ng-controller="alpha" ng-init="rangers=['Red Ranger','Blue Ranger', 'White Ranger', 'Green Ranger']">
+            <h1>{{ greeting }}</h1>
+            <h3 ng-bind="subGreeting"></h3>
+            
+            <button ng-click="fightPutty()">Fight Putty</button>
+            
+            <p>{{rangers[0]}}</p>
+        </div>
         
-        <button ng-click="fightPutty()">Fight Putty</button>
+        <div ng-controller="betaCtrl">
+            <p>{{ beta.beans }}</p>
+            <input type="text" placeholder="Favorite Bean" ng-model="favoriteBean" />
+            <button ng-click="addBean()">Add Beans</button>
+            
+            <ul ng-repeat="bean in myBeans">
+                <li>{{ bean }}</li>
+            </ul>
+            
+        </div>
         
     </body>
 </html>
