@@ -5,7 +5,12 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
         <script type="text/javascript" src="main.js"></script>
     </head>
-    <body>
+    <body ng-controller="alpha">
+        
+        <h1>{{ greeting }}</h1>
+        <h3 ng-bind="subGreeting"></h3>
+        
+        <button ng-click="fightPutty()">Fight Putty</button>
         
     </body>
 </html>
