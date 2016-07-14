@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="CakeApp">
+    <head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="controllers.js"></script>
+        <script type="text/javascript" src="factory.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div ng-controller="MenuController as menuCtrl">
+                <input type="text" ng-model="menuCtrl.search" placeholder="Search"/>
+                <ul>
+                    <li ng-repeat="item in menuCtrl.items | filter: menuCtrl.search">
+                        {{ item.name }},<strong>{{ item.price | currency }}</strong>,calories:{{ item.calories }}
+                    </li>
+                </ul>
+            </div>
+            <div ng-controller="MenuOrderController as menuOrderCtrl">
+                
+            </div>
+        </div>
+        
+    </body>
+</html>

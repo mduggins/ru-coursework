@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="PokeApp">
+    <head>
+        <title>NgRepeat</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body ng-controller="PallettTown as pCtrl">
+        
+        <h1>{{ pCtrl.welcomeMessage }}</h1>
+        
+        <ul>
+            <li ng-repeat="pokemon in pCtrl.pokemons">{{ pokemon }}</li>
+        </ul>
+        
+        <div ng-repeat="(jigKey, jigVal) in pCtrl.jigglypuff">
+            
+            <h3>{{jigKey}}</h3>
+            <h5>{{jigVal}}</h5>
+            <hr />
+            
+        </div>
+        
+    </body>
+</html>
