@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" ng-app="TodoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body ng-controller="todoCtrl as tdCtrl">
+    <div>
+        <ul>
+            <div ng-repeat="obj in tdCtrl.data">
+                <li><input type="checkbox" ng-model="obj.completed" /> | {{ obj.id }} | {{ obj.title }} | {{ obj.userId }}</li>
+            </div>
+        </ul>
+    </div>
+    
+</body>
+</html>
