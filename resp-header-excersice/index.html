@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        .container{
+            max-width: 960px;
+            margin: 0px auto;
+        }
+        
+        header {
+            width: 100%;
+            background-color: #fff;
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        #logo {
+            background-image: url('http://autotrek.com/wp-content/uploads/2015/03/checkmark-50x50.png');
+            width: 50px;
+            height: 50px;
+            float: left;
+            display: block;
+        }
+        #menu-icon {
+            background-image: url('http://s3.amazonaws.com/static.graphemica.com/glyphs/i50s/000/005/715/original/2630-50x50.png?1275296012');
+            display: none;
+            width: 50px;
+            height: 50px;
+            float: right;
+        }
+        
+        nav {
+            float: right;
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        nav li {
+            display: inline-block;
+            padding: 0px 10px;
+            font-size: x-large;
+        }
+        
+        nav li a {
+            text-decoration: none;
+        }
+        
+        @media only screen and (max-width: 768px){
+            #menu-icon {
+                display: inline-block;
+            }
+            nav ul, nav:active ul { 
+
+        		display: none;
+        		position: absolute;
+        		padding: 10px;
+        		background: #fff;
+        		border: 2.5px solid #444;
+        		right: 10px;
+        		top: 50px;
+        		width: 25%;
+        		border-radius: 4px 0 4px 4px;
+        
+            	}
+            
+            	nav li {
+            
+            		text-align: center;
+            		width: 100%;
+            		padding: 10px 0;
+            		margin: 0;
+            
+            	}
+            
+            	nav:hover ul {
+            
+            		display: block;
+            
+            	}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" id="logo"></a>
+            <nav>
+                <a href="#" id="menu-icon"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+</body>
+</html>
